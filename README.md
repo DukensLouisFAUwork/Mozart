@@ -12,16 +12,16 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[everyone of your app]
+This is application is going to be a music app that is inspired by spotify. It will sync the users playlist from sptofiy. It will also allow the user to find new music. 
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Music/Streaming
+- **Mobile:** The application will be displayed.
+- **Story:** Allows to acess spotify playlist. Create and add music to playlist. Sync playlist to spotify. The user will be able to search up artist. 
+- **Market:** Anyone that likes to stream music. 
+- **Habit:** Users can listen to as many songs as they like, ad-free, from their playlist or from a selected artist. Users can create new playlists and add as many songs as they want to them. 
+- **Scope:** This app will aim to be focused on streaming music, adding songs to playlists and viewing artists discography.
 
 ## Product Spec
 
@@ -29,39 +29,73 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
+* click on artist/username to be taken to their profile page
+* sync spotify profile playlist
+* can listen to songs on spotify
+* user can add songs to playlists
+* login / logout
+* stay signed in between sessions
+* pull spotify recommended playlists 
 * ...
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
+* genre labels for songs & album
+* ability to see album that the song appears on
+* search songs from spotify database/api
+* search albums from spotify database/api
 * ...
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Register Screen
+    * sets users infomation to database
+* Login Screen
+    * login / logout
+    * stay signed in between sessions
+
+* Discover Music/Playlists
+    * Disover Music is Playlsit that is recommend by Spotify
+* Your Playlists
+    * sync spotify profile playlist
+    * user can add songs to playlists
+* Playlists
+    * playlist is list of the songs
+    * contains artist names and songs
+* Artist
+    * list of songs 
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Your Playlists
+* Discover new playlists (populated from Spotify API)
+* logOut
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login/Register
+   * Login has register button <-> Register has login button
+   * once logged in, it takes you to -> Your Playlists
+   * text box for user name and password
+   * date of birth is add for registor
+* Your Playlists 
+   * Is connected to a tab navagation bar to acess -> Discover
+   * logout button takes to -> login screen
+  
+* Discover
+   * Is connecte to a tab navagation bar to acess discover
+   * Once a playlist is tapped it takes it to -> playlist screen
+   * logout button takes to -> login screen
+
+* Playlist
+   * Playlist opens up the list of songs contain.
+   * If you click on name it takes you to -> Artist
+   * logout button takes to -> login screen
+* Artist
+   * logout button takes to -> login screen
+
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
