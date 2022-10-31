@@ -109,7 +109,61 @@ This is application is going to be a music app that is inspired by spotify. It w
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+
+* Song
+| Property | Type               | Description      |
+| -------- | --------           | --------         |
+| URI      | String             | URI of the track |
+| -------- | --------           | --------         |
+| Name     | String             | Name of song     |
+| -------- | --------           | --------         |
+| Artist   | SPTAppRemoteArtist | Artist of song   |
+| -------- | --------           | --------         |
+| Album    | SPTAppRemoteAlbum  | Album of song    |
+| -------- | --------           | --------         |
+| Saved    | Bool               | Is song saved    |
+| -------- | --------           | --------         |
+| Episode  | Bool               | Is song episode  |
+| -------- | --------           | --------         |
+| Podcast  | Bool               | Is song podcast  |
+
+* Playlist
+| Property     | Type               | Description        |
+| --------     | --------           | --------           |
+| added_by.ID  | String             | User who added song|
+| --------     | --------           | --------           |
+| track        | String             | Name of song       |
+| --------     | --------           | --------           |
+| href         | String             | URI of the track   |
+| --------     | --------           | --------           |
+| Album        | SPTAppRemoteAlbum  | Album of song      |
+| --------     | --------           | --------           |
+
+* Artist
+| Property     | Type               | Description        |
+| --------     | --------           | --------           |
+| URI          | String             | URI of the artist  |
+| --------     | --------           | --------           |
+| Name         | String             | Name of artist     |
+
+
 ### Networking
+- Login
+    - (Read)Match User Password and Login
+- Register
+    - (Create)Register User in Database
+- Discover
+    - (Get/Read)Get Playlist from Spotify API
+    - (Get/Read)Get image of Playlist
+- Your Playlists
+    - (Get/Read)Get your Playlist from Spotify API
+    - (Get/Read)Get Image of Playlist
+    - (Get/Read)Get 
+- Playlist
+    - (Get/Read)Get List of Songs from Playlist
+    - (Get/Read)Get Artist Name
+- Select Artist
+    - (Get/Song Names)Get 
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
