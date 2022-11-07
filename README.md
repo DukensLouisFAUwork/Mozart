@@ -111,40 +111,32 @@ This is application is going to be a music app that is inspired by spotify. It w
 [Add table of models]
 
 * Song
-| Property | Type               | Description      |
-| -------- | --------           | --------         |
-| URI      | String             | URI of the track |
-| -------- | --------           | --------         |
-| Name     | String             | Name of song     |
-| -------- | --------           | --------         |
-| Artist   | SPTAppRemoteArtist | Artist of song   |
-| -------- | --------           | --------         |
-| Album    | SPTAppRemoteAlbum  | Album of song    |
-| -------- | --------           | --------         |
-| Saved    | Bool               | Is song saved    |
-| -------- | --------           | --------         |
-| Episode  | Bool               | Is song episode  |
-| -------- | --------           | --------         |
-| Podcast  | Bool               | Is song podcast  |
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| URI | String | URI of the track |
+| Name | String | Name of song |
+| Artist | SPTAppRemoteArtist | Artist of song |
+| Album | SPTAppRemoteAlbum | Album of song |
+| Saved | Bool | Is song saved |
+| Episode | Bool | Is song episode |
+| Podcast | Bool | Is song podcast |
 
 * Playlist
-| Property     | Type               | Description        |
-| --------     | --------           | --------           |
-| added_by.ID  | String             | User who added song|
-| --------     | --------           | --------           |
-| track        | String             | Name of song       |
-| --------     | --------           | --------           |
-| href         | String             | URI of the track   |
-| --------     | --------           | --------           |
-| Album        | SPTAppRemoteAlbum  | Album of song      |
-| --------     | --------           | --------           |
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| added_by.ID | String | User who added song |
+| track | String | Name of song |
+| href | String | URI of the track |
+| Album | SPTAppRemoteAlbum | Album of song |
 
 * Artist
-| Property     | Type               | Description        |
-| --------     | --------           | --------           |
-| URI          | String             | URI of the artist  |
-| --------     | --------           | --------           |
-| Name         | String             | Name of artist     |
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| URI | String | URI of the artist |
+| Name | String | Name of artist |
 
 
 ### Networking
