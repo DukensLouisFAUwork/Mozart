@@ -109,6 +109,12 @@ This is application is going to be a music app that is inspired by spotify. It w
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+* User
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| Username | String | User name set to database |
+| Password | String | Password to account |
 
 * Song
 
@@ -138,7 +144,7 @@ This is application is going to be a music app that is inspired by spotify. It w
 | URI | String | URI of the artist |
 | Name | String | Name of artist |
 
-* Spotify
+### Spotify
     * Base Url  https://api.spotify.com
 
 | HTTP Verb | Endpoint | Description |
