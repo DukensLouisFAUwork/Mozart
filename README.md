@@ -138,24 +138,74 @@ This is application is going to be a music app that is inspired by spotify. It w
 | URI | String | URI of the artist |
 | Name | String | Name of artist |
 
+* Spotify
+    * Base Url  https://api.spotify.com
+
+| HTTP Verb | Endpoint | Description |
+| -------- | -------- | -------- |
+| Get | /me/playlist | Get user playlist list string |
+| Get | /me/playlist/{playlist_id}/tracks | Get user playlist tracks string |
+| Get | /tracks/{id} | Get tracks information|
+| Get | /artists/{id} | Get artist name on the track|
+| Get | /playlists/{playlist_id} | Get playlist that is not users|
+| Get | /browse/featured-playlists | Get featured playlists|
+
+
+
 
 ### Networking
 - Login
     - (Read)Match User Password and Login
+        
+        ```swift
+          @IBAction func Signin(_ sender: Any) {
+        let username = UsernameField.text!
+        let password = PasswordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else{
+                print("Error: \(error?.localizedDescription) ")
+            }
+        }
+        }
+
+         ```
+         
 - Register
     - (Create)Register User in Database
+    ```swift
+        @IBAction func Signup(_ sender: Any) {
+        
+        let user = PFUser()
+        user.username = UsernameField.text
+        user.password = PasswordField.text
+        
+        user.signUpInBackground { (success, error) in
+            if success{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else
+            {
+                print("Error: \(error?.localizedDescription) ")
+            }
+        }
+        }
+
+    ```
 - Discover
     - (Get/Read)Get Playlist from Spotify API
     - (Get/Read)Get image of Playlist
 - Your Playlists
     - (Get/Read)Get your Playlist from Spotify API
     - (Get/Read)Get Image of Playlist
-    - (Get/Read)Get 
 - Playlist
     - (Get/Read)Get List of Songs from Playlist
     - (Get/Read)Get Artist Name
 - Select Artist
-    - (Get/Song Names)Get 
+    - (Get/Song Names)Get Name 
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
