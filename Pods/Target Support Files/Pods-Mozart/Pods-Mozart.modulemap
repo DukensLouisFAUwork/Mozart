@@ -1,0 +1,6 @@
+framework module Pods_Mozart {
+  umbrella header "Pods-Mozart-umbrella.h"
+
+  export *
+  module * { export * }
+}
