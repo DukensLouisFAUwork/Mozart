@@ -218,4 +218,5 @@ This is application is going to be a music app that is inspired by spotify. It w
 
 * First gif:
 
-/Users/connorcoleman/Downloads/Screen Recording 2022-11-17 at 11.36.42 PM.gif
+![Screen Recording 2022-11-17 at 11 36 42 PM](https://user-images.githubusercontent.com/90158931/202620175-7dc577c5-b3f9-4699-a8fc-58ff2adece33.gif)
+
