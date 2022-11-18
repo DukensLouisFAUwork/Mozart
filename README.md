@@ -215,3 +215,7 @@ This is application is going to be a music app that is inspired by spotify. It w
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+* First gif:
+
+/Users/connorcoleman/Downloads/Screen Recording 2022-11-17 at 11.36.42 PM.gif
