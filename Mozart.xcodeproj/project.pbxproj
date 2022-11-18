@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		283F0363291C89F10080EA53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0362291C89F10080EA53 /* AppDelegate.swift */; };
 		283F0365291C89F10080EA53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0364291C89F10080EA53 /* SceneDelegate.swift */; };
-		283F0367291C89F10080EA53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F0366291C89F10080EA53 /* ViewController.swift */; };
 		283F036A291C89F10080EA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283F0368291C89F10080EA53 /* Main.storyboard */; };
 		283F036C291C89F20080EA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283F036B291C89F20080EA53 /* Assets.xcassets */; };
 		283F036F291C89F20080EA53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283F036D291C89F20080EA53 /* LaunchScreen.storyboard */; };
+		28D96C272926EE72000111C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D96C262926EE72000111C6 /* LoginViewController.swift */; };
+		28DCA4A42927367700731FEB /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A32927367700731FEB /* DiscoverViewController.swift */; };
+		28DCA4A6292736C000731FEB /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A5292736C000731FEB /* PlaylistViewController.swift */; };
+		28DCA4A8292737C800731FEB /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A7292737C800731FEB /* SavedViewController.swift */; };
+		28DCA4AA292737D600731FEB /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A9292737D600731FEB /* ArtistViewController.swift */; };
 		BADA6550A2434A159D3A4C10 /* Pods_Mozart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDB25E971628D70AA704FE5 /* Pods_Mozart.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +24,15 @@
 		283F035F291C89F10080EA53 /* Mozart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mozart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283F0362291C89F10080EA53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		283F0364291C89F10080EA53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		283F0366291C89F10080EA53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		283F0369291C89F10080EA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		283F036B291C89F20080EA53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283F036E291C89F20080EA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		283F0370291C89F20080EA53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D96C262926EE72000111C6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		28DCA4A32927367700731FEB /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		28DCA4A5292736C000731FEB /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		28DCA4A7292737C800731FEB /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		28DCA4A9292737D600731FEB /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		E19EE8DE5900FEC14EF7678B /* Pods-Mozart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozart.debug.xcconfig"; path = "Target Support Files/Pods-Mozart/Pods-Mozart.debug.xcconfig"; sourceTree = "<group>"; };
 		F2EDF0E35D2699E5FBD6992D /* Pods-Mozart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozart.release.xcconfig"; path = "Target Support Files/Pods-Mozart/Pods-Mozart.release.xcconfig"; sourceTree = "<group>"; };
 		FEDB25E971628D70AA704FE5 /* Pods_Mozart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mozart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,11 +73,15 @@
 			children = (
 				283F0362291C89F10080EA53 /* AppDelegate.swift */,
 				283F0364291C89F10080EA53 /* SceneDelegate.swift */,
-				283F0366291C89F10080EA53 /* ViewController.swift */,
 				283F0368291C89F10080EA53 /* Main.storyboard */,
 				283F036B291C89F20080EA53 /* Assets.xcassets */,
 				283F036D291C89F20080EA53 /* LaunchScreen.storyboard */,
 				283F0370291C89F20080EA53 /* Info.plist */,
+				28D96C262926EE72000111C6 /* LoginViewController.swift */,
+				28DCA4A32927367700731FEB /* DiscoverViewController.swift */,
+				28DCA4A5292736C000731FEB /* PlaylistViewController.swift */,
+				28DCA4A7292737C800731FEB /* SavedViewController.swift */,
+				28DCA4A9292737D600731FEB /* ArtistViewController.swift */,
 			);
 			path = Mozart;
 			sourceTree = "<group>";
@@ -80,7 +92,6 @@
 				E19EE8DE5900FEC14EF7678B /* Pods-Mozart.debug.xcconfig */,
 				F2EDF0E35D2699E5FBD6992D /* Pods-Mozart.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283F0367291C89F10080EA53 /* ViewController.swift in Sources */,
+				28D96C272926EE72000111C6 /* LoginViewController.swift in Sources */,
+				28DCA4A8292737C800731FEB /* SavedViewController.swift in Sources */,
+				28DCA4AA292737D600731FEB /* ArtistViewController.swift in Sources */,
+				28DCA4A6292736C000731FEB /* PlaylistViewController.swift in Sources */,
 				283F0363291C89F10080EA53 /* AppDelegate.swift in Sources */,
 				283F0365291C89F10080EA53 /* SceneDelegate.swift in Sources */,
+				28DCA4A42927367700731FEB /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
