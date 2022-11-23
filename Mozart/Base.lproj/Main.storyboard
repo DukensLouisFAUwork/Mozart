@@ -11,7 +11,7 @@
         <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LoginViewController" id="BYZ-38-t0r" customClass="ViewControllerLogin" customModule="Mozart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Mozart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,8 +58,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrf-LC-VPD"/>
-                                    <segue destination="MlV-xq-je4" kind="presentation" id="u0y-xR-nRn"/>
+                                    <action selector="onlogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FIB-Fa-d9f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIi-aa-fJm">
@@ -71,7 +70,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NHl-O0-7oU"/>
+                                    <action selector="onsignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dai-es-nIA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,13 +78,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="passwordField" destination="tb9-gx-jI9" id="SO3-dO-H2A"/>
-                        <outlet property="usernameField" destination="s4S-gT-Q9x" id="vXQ-X4-06S"/>
+                        <outlet property="passwordfield" destination="tb9-gx-jI9" id="4HG-zM-0uT"/>
+                        <outlet property="usernamefield" destination="s4S-gT-Q9x" id="hX3-M4-8Jb"/>
+                        <segue destination="MlV-xq-je4" kind="presentation" identifier="loginsegue" id="c8d-YD-fCQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="48" y="-17"/>
         </scene>
         <!--DiscoverViewController-->
         <scene sceneID="3Ze-NH-pfa">
