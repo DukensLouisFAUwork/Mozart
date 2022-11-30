@@ -7,8 +7,9 @@
 
 import UIKit
 import Parse
+import WebKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, WKNavigationDelegate {
     
     
     @IBOutlet weak var usernamefield: UITextField!
@@ -17,10 +18,25 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+    private func getAccessTokenFromWebView() {
+            guard let urlRequest = APIService.shared.getAccessTokenURL() else { return }
+            let webview = WKWebView()
+
+            webview.load(urlRequest)
+            webview.navigationDelegate = self
+            view = webview
+        }
+
+        private func makeNetworkCall() {
+            Task {
+                let songs = try await APIService.shared.search()
+                print(songs)
+            }
+        }
     
+
     @IBAction func onlogin(_ sender: Any) {
         let username = usernamefield.text!
         let password = passwordfield.text!
@@ -28,6 +44,7 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password){
             (user, error) in
             if user != nil {
+                self.getAccessTokenFromWebView()
                 self.performSegue(withIdentifier: "loginsegue", sender: nil)}
             else{
                     print("Error: \(error?.localizedDescription)")
@@ -55,6 +72,7 @@ class LoginViewController: UIViewController {
         
         
     }
+    
     /*
     // MARK: - Navigation
 
@@ -65,4 +83,28 @@ class LoginViewController: UIViewController {
     }
     */
 
+}
+extension LoginViewController {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        guard let urlString = webView.url?.absoluteString else { return }
+        print(urlString)
+        
+        var tokenString = ""
+        if urlString.contains("#access_token=") {
+            let range = urlString.range(of: "#access_token=")
+            guard let index = range?.upperBound else { return }
+            
+            tokenString = String(urlString[index...])
+        }
+        
+        if !tokenString.isEmpty {
+            let range = tokenString.range(of: "&token_type=Bearer")
+            guard let index = range?.lowerBound else { return }
+            
+            tokenString = String(tokenString[..<index])
+            UserDefaults.standard.setValue(tokenString, forKey: "Authorization")
+            webView.removeFromSuperview()
+            makeNetworkCall()
+        }
+    }
 }
