@@ -80,12 +80,12 @@
                     <connections>
                         <outlet property="passwordfield" destination="tb9-gx-jI9" id="4HG-zM-0uT"/>
                         <outlet property="usernamefield" destination="s4S-gT-Q9x" id="hX3-M4-8Jb"/>
-                        <segue destination="MlV-xq-je4" kind="presentation" identifier="loginsegue" id="c8d-YD-fCQ"/>
+                        <segue destination="Mbo-Ry-ep4" kind="presentation" identifier="loginsegue" id="DZQ-n2-Php"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-17"/>
+            <point key="canvasLocation" x="-1491" y="-35"/>
         </scene>
         <!--DiscoverViewController-->
         <scene sceneID="3Ze-NH-pfa">
@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1C-f7-7xZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="-35"/>
+            <point key="canvasLocation" x="2915.2671755725191" y="-35.211267605633807"/>
         </scene>
         <!--ArtistViewController-->
         <scene sceneID="g1J-si-8wq">
@@ -131,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXU-sL-RlB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2924" y="-35"/>
+            <point key="canvasLocation" x="3849.6183206106871" y="-35.211267605633807"/>
         </scene>
         <!--SavedViewController-->
         <scene sceneID="Wfp-ek-EMg">
@@ -175,6 +175,33 @@
             </objects>
             <point key="canvasLocation" x="1436" y="-711"/>
         </scene>
+        <!--Spotifylogin View Controller-->
+        <scene sceneID="ugW-Sb-9by">
+            <objects>
+                <viewController id="9m8-gC-wYS" customClass="SpotifyloginViewController" customModule="Mozart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oy0-bl-Amx" customClass="Spo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAh-AM-aKb">
+                                <rect key="frame" x="150" y="338" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Continue"/>
+                                <connections>
+                                    <segue destination="MlV-xq-je4" kind="presentation" identifier="continue" id="u4u-wm-Sju"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bav-vY-Ekb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IyB-Va-alh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IkQ-5o-PYD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878.62595419847321" y="-35.211267605633807"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kZ6-HG-fZy">
             <objects>
@@ -191,7 +218,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S75-SY-99O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="-35"/>
+            <point key="canvasLocation" x="1701.5267175572519" y="-35.211267605633807"/>
         </scene>
         <!--Item-->
         <scene sceneID="qlH-VQ-q4d">
@@ -211,6 +238,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3f-wA-WQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1436" y="637"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K0C-gU-kWl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mbo-Ry-ep4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DMA-N1-xsR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9m8-gC-wYS" kind="relationship" relationship="rootViewController" id="r63-Pw-ebd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ov-iV-Yvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.297709923664122" y="-33.098591549295776"/>
         </scene>
     </scenes>
     <resources>

@@ -17,9 +17,11 @@
 		28DCA4A6292736C000731FEB /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A5292736C000731FEB /* PlaylistViewController.swift */; };
 		28DCA4A8292737C800731FEB /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A7292737C800731FEB /* SavedViewController.swift */; };
 		28DCA4AA292737D600731FEB /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A9292737D600731FEB /* ArtistViewController.swift */; };
+		2F35D4BC29404DE500427F1B /* SpotifyloginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D4BB29404DE500427F1B /* SpotifyloginViewController.swift */; };
 		2F9A70092936E75A0039BAE0 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A70082936E75A0039BAE0 /* ApiConstants.swift */; };
 		2F9A700B2936FAEE0039BAE0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A700A2936FAEE0039BAE0 /* APIService.swift */; };
 		2F9A700D2936FBB40039BAE0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A700C2936FBB40039BAE0 /* NetworkError.swift */; };
+		2FB87ECA29458DE60059C04B /* SpoitfyloginUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB87EC929458DE60059C04B /* SpoitfyloginUIViewController.swift */; };
 		BADA6550A2434A159D3A4C10 /* Pods_Mozart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDB25E971628D70AA704FE5 /* Pods_Mozart.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +38,11 @@
 		28DCA4A5292736C000731FEB /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		28DCA4A7292737C800731FEB /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		28DCA4A9292737D600731FEB /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		2F35D4BB29404DE500427F1B /* SpotifyloginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyloginViewController.swift; sourceTree = "<group>"; };
 		2F9A70082936E75A0039BAE0 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		2F9A700A2936FAEE0039BAE0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		2F9A700C2936FBB40039BAE0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2FB87EC929458DE60059C04B /* SpoitfyloginUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoitfyloginUIViewController.swift; sourceTree = "<group>"; };
 		E19EE8DE5900FEC14EF7678B /* Pods-Mozart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozart.debug.xcconfig"; path = "Target Support Files/Pods-Mozart/Pods-Mozart.debug.xcconfig"; sourceTree = "<group>"; };
 		F2EDF0E35D2699E5FBD6992D /* Pods-Mozart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozart.release.xcconfig"; path = "Target Support Files/Pods-Mozart/Pods-Mozart.release.xcconfig"; sourceTree = "<group>"; };
 		FEDB25E971628D70AA704FE5 /* Pods_Mozart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mozart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +95,8 @@
 				2F9A70082936E75A0039BAE0 /* ApiConstants.swift */,
 				2F9A700A2936FAEE0039BAE0 /* APIService.swift */,
 				2F9A700C2936FBB40039BAE0 /* NetworkError.swift */,
+				2F35D4BB29404DE500427F1B /* SpotifyloginViewController.swift */,
+				2FB87EC929458DE60059C04B /* SpoitfyloginUIViewController.swift */,
 			);
 			path = Mozart;
 			sourceTree = "<group>";
@@ -227,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F35D4BC29404DE500427F1B /* SpotifyloginViewController.swift in Sources */,
 				28D96C272926EE72000111C6 /* LoginViewController.swift in Sources */,
 				28DCA4A8292737C800731FEB /* SavedViewController.swift in Sources */,
 				28DCA4AA292737D600731FEB /* ArtistViewController.swift in Sources */,
@@ -235,6 +242,7 @@
 				283F0363291C89F10080EA53 /* AppDelegate.swift in Sources */,
 				283F0365291C89F10080EA53 /* SceneDelegate.swift in Sources */,
 				2F9A700B2936FAEE0039BAE0 /* APIService.swift in Sources */,
+				2FB87ECA29458DE60059C04B /* SpoitfyloginUIViewController.swift in Sources */,
 				28DCA4A42927367700731FEB /* DiscoverViewController.swift in Sources */,
 				2F9A700D2936FBB40039BAE0 /* NetworkError.swift in Sources */,
 			);

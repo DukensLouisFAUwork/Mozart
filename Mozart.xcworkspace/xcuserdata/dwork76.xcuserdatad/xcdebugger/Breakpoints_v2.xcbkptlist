@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4931A65D-4E23-41A9-B7E7-6B89E04C7999"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mozart/SpoitfyloginUIViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "SpoitfyloginUIViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - 9f39840e769ed014"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.__allocating_init(navigationBarClass: Swift.Optional&lt;Swift.AnyObject.Type&gt;, toolbarClass: Swift.Optional&lt;Swift.AnyObject.Type&gt;) -&gt; Mozart.SpoitfyloginUIViewController"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - 895e0b3f213401f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.init(navigationBarClass: Swift.Optional&lt;Swift.AnyObject.Type&gt;, toolbarClass: Swift.Optional&lt;Swift.AnyObject.Type&gt;) -&gt; Mozart.SpoitfyloginUIViewController"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "258">
+               </Location>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - e9cb07f3ea605e70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.__allocating_init(rootViewController: __C.UIViewController) -&gt; Mozart.SpoitfyloginUIViewController"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - 1912c352064dd0cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.init(rootViewController: __C.UIViewController) -&gt; Mozart.SpoitfyloginUIViewController"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - 651213b710589fe0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Mozart.SpoitfyloginUIViewController"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - 96eec51a755e9841"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Mozart.SpoitfyloginUIViewController"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - 630c25c5f639a6de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mozart.SpoitfyloginUIViewController&gt;"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - fe45edbef7f36a8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mozart.SpoitfyloginUIViewController&gt;"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "1D522825-5DA4-4C12-9F87-7F47B85E2C17 - a00863f7b4bca6f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mozart.SpoitfyloginUIViewController.__deallocating_deinit"
+                  moduleName = "Mozart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dwork76/Documents/MozartWork/Mozart/Mozart/SpoitfyloginUIViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
