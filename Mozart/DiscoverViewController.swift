@@ -7,14 +7,35 @@
 
 import UIKit
 
-class DiscoverViewController: UIViewController {
+class DiscoverViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    
+    var search = [String]()
+
+    @IBOutlet weak var seach: UITextField!
+  
+    
+    @IBAction func seachbutton(_ sender: Any) {
+        
+        
+        
+    }
+    //func getSearch()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = UITableViewCell()
+        cell.textLabel!.text = "row: \(indexPath.row)"
+        return cell
+    }
 
     /*
     // MARK: - Navigation

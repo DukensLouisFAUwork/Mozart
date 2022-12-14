@@ -12,6 +12,7 @@ import WebKit
 
 class SpotifyloginViewController: UIViewController{
 
+   // @IBOutlet weak var webkitob: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
        // getAccessTokenFromWebView
@@ -24,8 +25,13 @@ class SpotifyloginViewController: UIViewController{
 
             webview.load(urlRequest)
             webview.navigationDelegate = self
+          //  webView.loadHTMLString(htmlString, baseURL: nil)
             view = webview
-        }
+     //   webkitob = webview
+        
+        
+        
+    }
 
         private func makeNetworkCall() {
             Task {

@@ -18,6 +18,8 @@
 		28DCA4A8292737C800731FEB /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A7292737C800731FEB /* SavedViewController.swift */; };
 		28DCA4AA292737D600731FEB /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCA4A9292737D600731FEB /* ArtistViewController.swift */; };
 		2F35D4BC29404DE500427F1B /* SpotifyloginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35D4BB29404DE500427F1B /* SpotifyloginViewController.swift */; };
+		2F8E806C2949D8AD0089C518 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E806B2949D8AD0089C518 /* PlaylistTableViewCell.swift */; };
+		2F8E806E294A13B90089C518 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E806D294A13B90089C518 /* SearchCell.swift */; };
 		2F9A70092936E75A0039BAE0 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A70082936E75A0039BAE0 /* ApiConstants.swift */; };
 		2F9A700B2936FAEE0039BAE0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A700A2936FAEE0039BAE0 /* APIService.swift */; };
 		2F9A700D2936FBB40039BAE0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A700C2936FBB40039BAE0 /* NetworkError.swift */; };
@@ -39,6 +41,8 @@
 		28DCA4A7292737C800731FEB /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		28DCA4A9292737D600731FEB /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		2F35D4BB29404DE500427F1B /* SpotifyloginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyloginViewController.swift; sourceTree = "<group>"; };
+		2F8E806B2949D8AD0089C518 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		2F8E806D294A13B90089C518 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		2F9A70082936E75A0039BAE0 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		2F9A700A2936FAEE0039BAE0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		2F9A700C2936FBB40039BAE0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 				2F9A700C2936FBB40039BAE0 /* NetworkError.swift */,
 				2F35D4BB29404DE500427F1B /* SpotifyloginViewController.swift */,
 				2FB87EC929458DE60059C04B /* SpoitfyloginUIViewController.swift */,
+				2F8E806B2949D8AD0089C518 /* PlaylistTableViewCell.swift */,
+				2F8E806D294A13B90089C518 /* SearchCell.swift */,
 			);
 			path = Mozart;
 			sourceTree = "<group>";
@@ -235,6 +241,8 @@
 			files = (
 				2F35D4BC29404DE500427F1B /* SpotifyloginViewController.swift in Sources */,
 				28D96C272926EE72000111C6 /* LoginViewController.swift in Sources */,
+				2F8E806C2949D8AD0089C518 /* PlaylistTableViewCell.swift in Sources */,
+				2F8E806E294A13B90089C518 /* SearchCell.swift in Sources */,
 				28DCA4A8292737C800731FEB /* SavedViewController.swift in Sources */,
 				28DCA4AA292737D600731FEB /* ArtistViewController.swift in Sources */,
 				28DCA4A6292736C000731FEB /* PlaylistViewController.swift in Sources */,

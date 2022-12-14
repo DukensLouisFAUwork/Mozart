@@ -133,7 +133,7 @@ class APIService {
         print(token)
         return urlRequest
     }
-    func getPlaylist() async throws -> [String] {
+  /*  func getPlaylist() async throws -> [String] {
         guard let urlRequest = await createURLRequestPlaylist() else { throw NetworkError.invalidURL }
 
         print(urlRequest)
@@ -150,20 +150,22 @@ class APIService {
     //    let play = playlistsS["name"] as! String
         let item = results.items
         
+        print(item)
        // let items = results as! NSDictionary
      //   let items = results.items as! [[String:AnyObject]]
      //   print(items)
       //  print(items)
 
         let songs = item.map({$0.name})
+        
         print("hello")
         print("Return")
         print(songs)
         return songs
-    }
+    }*/
 
 }
-struct Playlists: Codable {
+/*struct Playlists: Codable {
     let items: [Items]
    // let name: String
 }
@@ -173,12 +175,15 @@ struct Items: Codable {
     let name: String
     let tracks: TracksUrl
 }
+
+
+
 struct TracksUrl : Codable {
     let href: String
-}
-struct GetImage : Codable {
-    let url:String
-}
+}*/
+
+
+
 
 struct Resp: Codable {
     let id: String
