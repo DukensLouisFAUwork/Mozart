@@ -119,14 +119,16 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" id="f6r-7C-dcS">
-                        <barButtonItem key="leftBarButtonItem" width="75" style="plain" id="KjC-f6-qCv">
-                            <textField key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="i4W-MT-7UY">
-                                <rect key="frame" x="16" y="11" width="267" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </barButtonItem>
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="PHJ-LC-olq">
+                            <rect key="frame" x="31" y="11" width="332" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="seachbutton:" destination="8WG-p1-oyM" eventType="editingDidEnd" id="1mA-3Q-4TC"/>
+                            </connections>
+                        </textField>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="ezY-H3-iNa">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="DBu-B9-zvU">
                                 <rect key="frame" x="290" y="10.666666666666664" width="87" height="35"/>
@@ -140,7 +142,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="seach" destination="i4W-MT-7UY" id="alp-6V-iI6"/>
+                        <outlet property="seachview" destination="myL-J2-99n" id="2Hi-95-T4h"/>
+                        <outlet property="testseach" destination="PHJ-LC-olq" id="AQj-Y4-WwG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkb-bv-HFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

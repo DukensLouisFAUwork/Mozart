@@ -133,7 +133,43 @@ class APIService {
         print(token)
         return urlRequest
     }
-  /*  func getPlaylist() async throws -> [String] {
+    func createURLRequestSeach(newString: String) -> URLRequest? {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = ApiConstants.apiHost
+        components.path = "/v1/search"
+
+        components.queryItems = [
+            URLQueryItem(name: "type", value: "track"),
+            URLQueryItem(name: "query", value: newString)
+        ]
+
+        guard let url = components.url else { return nil }
+
+        var urlRequest = URLRequest(url: url)
+
+        let token: String = UserDefaults.standard.value(forKey: "Authorization") as! String
+
+        urlRequest.addValue("Bearer " + token, forHTTPHeaderField: "Authorization")
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        urlRequest.httpMethod = "GET"
+        print(urlRequest)
+        return urlRequest
+    }
+    func search(newString: String) async throws -> [String] {
+        guard let urlRequest = createURLRequestSeach(newString: newString) else { throw NetworkError.invalidURL }
+
+        let (data, _) = try await URLSession.shared.data(for: urlRequest)
+
+        let decoder = JSONDecoder()
+        let results = try decoder.decode(Response.self, from: data)
+
+        let items = results.tracks.items
+
+        let songs = items.map({$0.name})
+        return songs
+    }  /*  func getPlaylist() async throws -> [String] {
         guard let urlRequest = await createURLRequestPlaylist() else { throw NetworkError.invalidURL }
 
         print(urlRequest)

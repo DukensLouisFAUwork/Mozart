@@ -11,20 +11,42 @@ class DiscoverViewController: UIViewController,UITableViewDataSource, UITableVie
     
     var search = [String]()
 
-    @IBOutlet weak var seach: UITextField!
-  
+    @IBOutlet weak var testseach: UITextField!
+    
+    @IBOutlet var seachview: UITableView!
     
     @IBAction func seachbutton(_ sender: Any) {
         
+        Task {
+            
+            var nextString = testseach.text!
+
+            self.search = try await APIService.shared.search(newString: nextString)
+            
+            
+            
+            seachview.reloadData()
+        }
         
         
     }
-    //func getSearch()
+    private func getSearch(){
+        Task{
+            search = try await APIService.shared.search()
+            
+            
+            
+            
+            seachview.dataSource = self
+            seachview.delegate = self
+        }
+        
+    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getSearch()
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,8 +54,11 @@ class DiscoverViewController: UIViewController,UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
-        cell.textLabel!.text = "row: \(indexPath.row)"
+        //var cell = UITableViewCell()
+        //cell.textLabel!.text = "row: \(indexPath.row)"
+        var cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as! SearchCell
+        
+         cell.seachtext.text = self.search[indexPath.row] as? String
         return cell
     }
 
