@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1491" y="-35"/>
+            <point key="canvasLocation" x="-1492.3664122137404" y="-35.211267605633807"/>
         </scene>
         <!--DiscoverViewController-->
         <scene sceneID="3Ze-NH-pfa">
@@ -145,12 +145,25 @@
                                 <rect key="frame" x="0.0" y="-76" width="393" height="870"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistCell" rowHeight="72" id="5bG-Qo-c5F">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5bG-Qo-c5F" id="XKe-Xu-hjf">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fqk-6c-cWF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jBa-Z4-scF"/>
+                    <connections>
+                        <outlet property="tableView" destination="wib-1J-PG4" id="rLP-TQ-pF4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9SF-ov-iiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

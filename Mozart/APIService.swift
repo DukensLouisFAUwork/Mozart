@@ -56,6 +56,7 @@ class APIService {
         return urlRequest
     }
     func createURLRequestId() -> URLRequest? {
+        print("createURLRequest")
         var components = URLComponents()
         components.scheme = "https"
         components.host = ApiConstants.apiHost
@@ -90,6 +91,7 @@ class APIService {
         return songs
     }
     func getId() async throws -> String {
+        print("getID")
         guard let urlRequest = createURLRequestId() else { throw NetworkError.invalidURL }
 
         let (data, _) = try await URLSession.shared.data(for: urlRequest)
@@ -107,6 +109,7 @@ class APIService {
          return items
     }
     func createURLRequestPlaylist() async -> URLRequest? {
+        print("createURLRequestPlaylist")
         guard let idNow = try? await getId() else { return nil}
         
         
@@ -134,6 +137,7 @@ class APIService {
         return urlRequest
     }
     func getPlaylist() async throws -> [String] {
+        print("getPlaylist")
         guard let urlRequest = await createURLRequestPlaylist() else { throw NetworkError.invalidURL }
 
         print(urlRequest)
@@ -159,6 +163,7 @@ class APIService {
         print("hello")
         print("Return")
         print(songs)
+        print(type(of:songs))
         return songs
     }
 

@@ -19,10 +19,15 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.getAccessTokenFromWebView()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
 
-    
+    @objc func keyboardDismiss() {
+        view.endEditing(true)
+    }
 
     @IBAction func onlogin(_ sender: Any) {
         let username = usernamefield.text!

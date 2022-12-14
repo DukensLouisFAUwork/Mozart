@@ -6,32 +6,57 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
-class SavedViewController: UIViewController {
 
+class SavedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var name: Array<String> = []
+    var name2 = [String]()
+
+ 
+    
+
+    
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
-        super.viewDidLoad()
-
         makeNetworkCall()
+        super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+
+        
         // Do any additional setup after loading the view.
     }
     
     private func makeNetworkCall() {
         Task {
-         //   let songs = try await APIService.shared.search()
-         //  let id = try await   APIService.shared.getId()
-            
-            
-        //    let newsongs = try await APIService.shared.createURLRequestPlaylist()
-            
-            let playlistplent = try await APIService.shared.getPlaylist()
-            
-            print(playlistplent)
-            print("hello")
-            //return
-         //   print(id)
-         //   webView.close
+            //let playlistplent = try await APIService.shared.getPlaylist()
+            self.name2 = try await APIService.shared.getPlaylist()
+            print(name2[1])
+            self.tableView.reloadData()
+            //completed()
+            //print(type(of:playlistplent))
+            //return (playlistplent)
         }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
+        //let cell = UITableViewCell()
+        //makeNetworkCall()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlaylistCell", for: indexPath)
+        //var name = ["Test", "test2", "tEst5", "testy", "test6", "test7", "test8", "test9"]
+            print(name2)
+        //cell.textLabel?.text = "\(indexPath.row+1)" + name2[indexPath.row+1]
+            return cell
+    
     }
     
     
