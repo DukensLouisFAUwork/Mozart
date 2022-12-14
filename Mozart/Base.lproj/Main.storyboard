@@ -121,7 +121,7 @@
                     <navigationItem key="navigationItem" id="f6r-7C-dcS">
                         <nil key="title"/>
                         <textField key="titleView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="PHJ-LC-olq">
-                            <rect key="frame" x="31" y="11" width="332" height="34"/>
+                            <rect key="frame" x="16" y="11" width="268" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -134,7 +134,7 @@
                                 <rect key="frame" x="290" y="10.666666666666664" width="87" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
                             </button>
                             <connections>
                                 <action selector="seachbutton:" destination="8WG-p1-oyM" id="S6I-fl-bWw"/>
@@ -164,21 +164,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1C-f7-7xZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2915.2671755725191" y="-35.211267605633807"/>
-        </scene>
-        <!--ArtistViewController-->
-        <scene sceneID="g1J-si-8wq">
-            <objects>
-                <viewController title="ArtistViewController" id="W6m-G6-f20" customClass="ArtistViewController" customModule="Mozart" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fwC-fH-cqL">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Cwr-KT-FLr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PXU-sL-RlB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3849.6183206106871" y="-35.211267605633807"/>
         </scene>
         <!--SavedViewController-->
         <scene sceneID="Wfp-ek-EMg">
@@ -250,11 +235,11 @@
             </objects>
             <point key="canvasLocation" x="2229.770992366412" y="636.61971830985919"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="yv5-Sv-PbV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZgB-pP-CI8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cX3-2Y-iUA"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="cX3-2Y-iUA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hfa-NN-pgv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
@@ -314,11 +299,11 @@
             </objects>
             <point key="canvasLocation" x="1701.5267175572519" y="-35.211267605633807"/>
         </scene>
-        <!--Item-->
+        <!--Saved Playlists-->
         <scene sceneID="qlH-VQ-q4d">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nle-Ve-1AR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Lvx-KR-9GB"/>
+                    <tabBarItem key="tabBarItem" title="Saved Playlists" image="record.circle.fill" catalog="system" id="Lvx-KR-9GB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5hw-Tb-DGC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
@@ -353,6 +338,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="record.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -22,8 +22,13 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
         // Do any additional setup after loading the view.
     }
 
-    
+    override func  viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "loginsegue", sender: nil)
+        }
+    }
 
+    
     @IBAction func onlogin(_ sender: Any) {
         let username = usernamefield.text!
         let password = passwordfield.text!
@@ -31,6 +36,7 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
         PFUser.logInWithUsername(inBackground: username, password: password){
             (user, error) in
             if user != nil {
+                UserDefaults.standard.set(true, forKey: "userLoggedIn")
                 self.performSegue(withIdentifier: "loginsegue", sender: nil)}
             else{
                     print("Error: \(error?.localizedDescription)")

@@ -15,6 +15,7 @@ class SavedViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var tabelview: UITableView!
     var play = [String]()
     var urlString = [String]()
+    var pics = [String]()
     
     func getPlaylist() async throws -> [String] {
         guard let urlRequest = await  APIService().createURLRequestPlaylist() else { throw NetworkError.invalidURL }
@@ -48,9 +49,11 @@ class SavedViewController: UIViewController, UITableViewDataSource, UITableViewD
        // let url =
        
         print("last")
-        print(picUrl[1])
+        print(type(of: picUrl))
         //let picknow = picUrl as [String]
         self.play = songs
+        //self.pics = picUrl[Mozart.GetImage]
+        //print(pics)
         //self.urlString = picUrl.toString()
        // print(urlString)
         //let img = picUrl as! [String]
